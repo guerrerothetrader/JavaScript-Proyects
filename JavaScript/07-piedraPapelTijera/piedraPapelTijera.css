@@ -1,0 +1,18 @@
+img {
+	width: 100px;
+	height: 100px;
+}
+
+.fondoRojo {
+	background-color: red;
+}
+
+
+.seleccionada {
+	border: 5px solid red;
+	opacity: 1;
+}
+
+.noSeleccionada {
+	opacity: 0.5;
+}

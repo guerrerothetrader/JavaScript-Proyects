@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzas App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-section" id="loginSection">
+            <h2>Ingresa</h2>
+            <form id="loginForm">
+                <label for="mail">Email:</label>
+                <input type="email" name="mail" id="mail" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit">Ingresar</button>
+            </form>
+            <p><a href="#" id="registerLink">Registrarse</a></p>
+        </div>
+
+        <div class="user-section" id="userSection" style="display: none;">
+            <h2>Bienvenido, <span id="userEmail"></span></h2>
+            <nav>
+                <ul>
+                    <li><a href="#" id="portfolioLink">Portfolio</a></li>
+                    <li><a href="#" id="expensesLink">Gastos</a></li>
+                    <li><a href="#" id="calculatorLink">Calculadora</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="portfolioSection" style="display: none;">
+            <h2>Portfolio de inversión</h2>
+            <form id="portfolioForm">
+                <label for="investmentType">Tipo de inversión:</label>
+                <select id="investmentType" required>
+                    <option value="">Elije un tipo</option>
+                    <option value="Cash">Cash</option>
+                    <option value="Fixed Income">Renta Variable</option>
+                    <option value="Equity">Renta Fija</option>
+                    <option value="Cryptocurrency">Criptomonedas</option>
+                </select>
+                <label for="investmentName">Nombre de inversión:</label>
+                <input type="text" id="investmentName" required>
+                <label for="investmentAmount">Cantidad:</label>
+                <input type="number" id="investmentAmount" required>
+                <button type="submit">Añadir</button>
+            </form>
+            <ul id="portfolioList"></ul>
+            <canvas id="portfolioChart"></canvas>
+        </div>
+
+        <div id="expensesSection" style="display: none;">
+            <h2>Gastos</h2>
+            <form id="expensesForm">
+                <input type="text" id="expenseName" placeholder="Tipo de gasto" required>
+                <input type="number" id="expenseAmount" placeholder="Cantidad" required>
+                <button type="submit">Añadir</button>
+            </form>
+            <ul id="expensesList"></ul>
+            <p id="totalExpenses"></p>
+        </div>
+
+        <div id="calculatorSection" style="display: none;">
+            <h2>Calculadora Financiera</h2>
+            <p>Calcula tu fondo de emergencia:</p>
+            <label for="monthlyExpenses">Gastos mensuales:</label>
+            <input type="number" id="monthlyExpenses" placeholder="Introduce una cantidad" required>
+            <button id="calculateButton">Calcular</button>
+            <p id="emergencyFund"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

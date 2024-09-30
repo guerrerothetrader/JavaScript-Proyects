@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <img src="../src/logo.png" alt="logo">
+        <ul id="navLinks">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </nav>
+    <div class="container">
+        <div class="containerCredits">
+            <h1><span>Intense.</span>Training</h1>
+            <h2 class="green">¿Qué quieres entrenar hoy?</h2>
+        </div>
+        <div id="menu">
+            <div onclick="location.href='boxing.html'" class="box boxing">Boxeo</div>
+            <div onclick="location.href='tabata.html'" class="box tabata">Tabata</div>
+            <div onclick="location.href='sprints.html'" class="box sprints">Sprints</div>
+        </div>
+        <div id="timer" class="hidden">
+            <h2 id="trainingType"></h2>
+            <p id="rounds"></p>
+            <p id="time"></p>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

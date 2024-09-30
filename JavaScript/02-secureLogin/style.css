@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(65deg, rgb(38, 107, 48), #5f8861, rgb(226, 223, 205));
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14em;
+}
+
+.box{
+    border: 1px solid black;
+    padding: 7em 3em;
+    border-radius: 8px;
+    background-color: rgb(220, 208, 150);
+    box-shadow: 0px 0px 20px rgb(61, 61, 59);
+    max-width: 500px;
+    width: 400px;
+    min-width: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+form label {
+    font-weight: 500
+}
+
+form input {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    background-color: #5f8861;
+    color: #fff;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    margin-top: 2em;
+    background-color: rgb(38, 107, 48);
+    color: #fff;
+    font-size: 1.4em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.newpass {
+
+    font-size: small;
+}
+
+.img img{
+    width: 30em;
+    height: 40em;
+}
+
+.register {
+    margin-top: 2em;
+    font-size: medium;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.register:hover {
+    color: rgb(38, 107, 48);
+}
+
+.register a {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
